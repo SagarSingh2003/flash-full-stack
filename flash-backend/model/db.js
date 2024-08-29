@@ -13,5 +13,5 @@ const pool = mysql.createPool({
 
 export default pool;
 
-const [rows] = await pool.query("SELECT * FROM flashcard");
-console.log(rows);
+// const [rows] = await pool.query("SELECT * FROM flashcard");
+// console.log(rows);
