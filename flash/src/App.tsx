@@ -8,6 +8,7 @@ import Signup from './components/auth/Signup';
 import Share from './components/Share';
 import Import from './components/Import';
 import { Toaster } from "@/components/ui/toaster"
+import Ai from './components/Ai';
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
             <Route path="/signup" element={<Signup />} />
             <Route path="/share" element={<Share />} />
             <Route path="/import" element={<Import />} />
+            <Route path="/ai" element={<Ai />} />
           </Routes>
         </BrowserRouter>
         
@@ -34,6 +36,7 @@ function App() {
             <Route path="/createCards" element={<CreateCards />} />
             <Route path="/share" element={<Share />} />
             <Route path="/import" element={<Import />} />
+            <Route path="/ai" element={<Ai />} />
           </Routes>
         </BrowserRouter>
       </SignedIn>

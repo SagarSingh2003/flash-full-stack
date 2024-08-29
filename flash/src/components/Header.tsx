@@ -24,6 +24,13 @@ import {
           </a>
         </MenubarMenu>
         <MenubarMenu>
+         <a href="/ai" className="hover:text-black hover:cursor-pointer">
+          <MenubarTrigger>
+          Ai
+          </MenubarTrigger>
+          </a>
+        </MenubarMenu>
+        <MenubarMenu>
          <a href="/createCards" className="hover:text-black text-[13px] hover:cursor-pointer">
           <MenubarTrigger>
             CreateCards
