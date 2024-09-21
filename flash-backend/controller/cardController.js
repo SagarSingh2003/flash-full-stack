@@ -236,8 +236,8 @@ const cardController = {
               const jsonData = JSON.parse(stringResult);
               for(let i = 0 ; i < JSON.parse(jsonData).length ; i++){
     
-                const {question , answer , category , user_id} = JSON.parse(jsonData)[i];
-                const [rows] = await pool.query(`INSERT INTO flashcard(question , answer , category , user_id) VALUES("${String(question)}" , "${String(answer)}" , "${String(category)}" , "${String(user_id)}");`)
+                const {question , answer , category , user_id , deck_id} = JSON.parse(jsonData)[i];
+                const [rows] = await pool.query(`INSERT INTO flashcard(question , answer , category , user_id , deck_id) VALUES("${String(question)}" , "${String(answer)}" , "${String(category)}" , "${String(user_id)}" , "${String(deck_id)}")`)
                 console.log(rows , "rows data");
             }
               
