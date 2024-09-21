@@ -76,7 +76,7 @@ const cardController = {
     createDeck : async (req ,res) => {
         try {
             console.log(req.body.deck);
-            const {title , user_id} = JSON.parse(JSON.stringify(req.body.deck));
+            const {title , user_id} = JSON.parse(req.body.deck);
             const [rows] = await pool.query(`INSERT INTO Decks(title , user_id) VALUES("${String(title)}" , "${String(user_id)}");`)
 
             console.log('got create request');
