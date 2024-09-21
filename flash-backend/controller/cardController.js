@@ -33,11 +33,12 @@ const cardController = {
     getAllDecks : async (req , res) => {
         try{
             
-            const user_id  = req.query.user_id;
+            const user_id  = req.params.user_id;
+            console.log(user_id , "user_id");
             let rows = [];
 
             if(user_id){
-                rows = await pool.query(`select * from decks WHERE user_id='${user_id}'`);
+                rows = await pool.query(`select * from Decks WHERE user_id='${user_id}'`);
             }
             
             console.log(rows[0]);
