@@ -44,7 +44,7 @@ const cardController = {
             console.log(rows[0]);
             // console.log(rows , "rows");
             res.status(200).json({    
-                cards : rows[0]
+                decks : rows[0]
             });   
             
         }catch(err){
