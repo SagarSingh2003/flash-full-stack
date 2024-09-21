@@ -13,8 +13,12 @@ router.post("/generate-card" , cardController.aiGeneratedCards);
 
 router.post("/createCards" , cardController.createCards);
 
+router.post("/createDeck" , cardController.createDeck);
+
 router.put("/updateCard/:card_id/:user_id" , cardController.updateCard);
 
 router.delete('/deleteCard' , cardController.deleteCard);
+
+router.delete('/deleteAllCards' , cardController.deleteAllCards);
 
 export default router;

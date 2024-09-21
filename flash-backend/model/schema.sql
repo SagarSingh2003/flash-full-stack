@@ -7,8 +7,18 @@ CREATE TABLE flashcard(
     answer VARCHAR(255) NOT NULL,
     category TEXT NOT NULL,
     user_id TEXT NOT NULL,
-    created_at TIMESTAMP NOT NULL DEFAULT NOW()
+    created_at TIMESTAMP NOT NULL DEFAULT NOW(),
+    deck_id integer NOT NULL, 
+    user_id VARCHAR(255) NOT NULL,
 );
+
+CREATE TABLE Decks(
+    id integer PRIMARY KEY AUTO_INCREMENT,
+    title VARCHAR(255) NOT NULL,
+    user_id VARCHAR(255) NOT NULL,
+)
+
+
 
 INSERT INTO flashcard(question , answer , category , user_id )
 VALUES
