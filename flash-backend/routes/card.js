@@ -11,6 +11,8 @@ router.post("/createCard" , cardController.createCard);
 
 router.post("/generate-card" , cardController.aiGeneratedCards);
 
+router.post("/getAllDecks/:user_id"  ,cardController.getAllDecks );
+
 router.post("/createCards" , cardController.createCards);
 
 router.post("/createDeck" , cardController.createDeck);
